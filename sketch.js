@@ -51,22 +51,7 @@ function draw() {
     createArrow();
     
   }
-  if(arrow.isTouching(redBalloon)){
-    redBalloon.destroy();
-    score=score+1
-  }
-  if(arrow.isTouching(greenBalloon)){
-    greenBalloon.destroy();
-    score=score+1
-  }
-  if(arrow.isTouching(blueBalloon)){
-    blueBalloon.destroy();
-    score=score+1
-  }
-  if(arrow.isTouching(pinkBalloon)){
-    pinkBalloon.destroy();
-    score=score+1
-  }
+  
   
 
   var select_balloon = Math.round(random(1,4));
@@ -105,7 +90,6 @@ function draw() {
 
     BalloonGroup = redBalloon, greenBalloon, blueBalloon, pinkBalloon;
      drawSprites();
-     
      text("Score:"+ score,270,30);
   }
   
